@@ -61,25 +61,23 @@ const Extensions = () => {
                 <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-0">
                     Extensions List</h1>
                 <div className="flex justify-center items-center gap-3">
-                    <button 
-                      onClick={() => setFilter('all')}
+                    <button onClick={() => setFilter('all')}
                       className={`bg-neutral-0 dark:bg-neutral-700 rounded-full px-4 py-2 
                         outline-none focus:outline-2 focus:outline-offset-2 
                         focus:outline-red-400 shadow-sm cursor-pointer hover:bg-neutral-100 
                         dark:hover:bg-neutral-600
-                        ${filter === 'all' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 
-                            dark:hover:bg-red-500 dark:hover:text-neutral-900 
-                            text-neutral-0' : 'text-neutral-900 dark:text-neutral-0'}
+                        ${filter === 'all' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 dark:hover:bg-red-500 dark:hover:text-neutral-900 text-neutral-0' 
+                            : 'text-neutral-900 dark:text-neutral-0'}
                       `}>All</button>
+                      
                     
                     <button onClick={() => setFilter('active')}
                         className={`bg-neutral-0 dark:bg-neutral-700 rounded-full px-4 py-2 
                             outline-none focus:outline-2 focus:outline-offset-2 
                             focus:outline-red-400 shadow-sm cursor-pointer hover:bg-neutral-100 
                             dark:hover:bg-neutral-600
-                        ${filter === 'active' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 
-                            dark:hover:bg-red-500 dark:hover:text-neutral-900 
-                            text-neutral-0' : 'text-neutral-900 dark:text-neutral-0'}
+                        ${filter === 'active' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 dark:hover:bg-red-500 dark:hover:text-neutral-900 text-neutral-0' 
+                            : 'text-neutral-900 dark:text-neutral-0'}
                         `}>Active</button>
                     
                     <button onClick={() => setFilter('inactive')}
@@ -87,13 +85,13 @@ const Extensions = () => {
                         outline-none focus:outline-2 focus:outline-offset-2 
                         focus:outline-red-400 shadow-sm cursor-pointer hover:bg-neutral-100 
                         dark:hover:bg-neutral-600
-                        ${filter === 'inactive' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 
-                            dark:hover:bg-red-500 dark:hover:text-neutral-900 
-                            text-neutral-0' : 'text-neutral-900 dark:text-neutral-0'}
+                        ${filter === 'inactive' ? 'bg-red-700 hover:bg-red-500 dark:bg-red-400 dark:hover:bg-red-500 dark:hover:text-neutral-900 text-neutral-0' 
+                            : 'text-neutral-900 dark:text-neutral-0'}
                         `}>Inactive</button>  
                 </div>
             </div>
-                                
+            
+            
             <section className="grid grid-cols-1 justify-center items-center gap-4 
             sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {filteredData.map((item) => (
