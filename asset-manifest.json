@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/browser-extensions/static/css/main.82ed8f7b.css",
+    "main.js": "/browser-extensions/static/js/main.a621f555.js",
+    "index.html": "/browser-extensions/index.html",
+    "main.82ed8f7b.css.map": "/browser-extensions/static/css/main.82ed8f7b.css.map",
+    "main.a621f555.js.map": "/browser-extensions/static/js/main.a621f555.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82ed8f7b.css",
+    "static/js/main.a621f555.js"
+  ]
+}
